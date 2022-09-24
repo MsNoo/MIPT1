@@ -33,6 +33,4 @@ public class MainActivity extends AppCompatActivity {
         tvMain.setTypeface(null,Typeface.BOLD);
         tvMain.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
     }
-
-    // Made some changes to code ... and so the adventure has begun
 }
