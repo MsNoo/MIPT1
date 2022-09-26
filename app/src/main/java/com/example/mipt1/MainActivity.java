@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvMain = (TextView)findViewById(R.id.tvMain);
-        tvMainFontFamily = getResources().getFont(R.font.paprika);
+        tvMainFontFamily = getResources().getFont(R.font.caveat_test);
     }
 
     public void onBtnChangeTextClick(View view) {
