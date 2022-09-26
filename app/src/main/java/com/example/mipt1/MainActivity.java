@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvMain;
+    private Typeface tvMainFontFamily;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tvMain = (TextView)findViewById(R.id.tvMain);
+        tvMainFontFamily = getResources().getFont(R.font.paprika);
     }
 
     public void onBtnChangeTextClick(View view) {
@@ -32,5 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBtnMakeBoldAndUnderline(View view) {
         tvMain.setTypeface(null,Typeface.BOLD);
         tvMain.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
+        tvMain.setTypeface(tvMainFontFamily);
+        tvMain.setTextSize(40);
     }
 }
